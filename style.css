@@ -1,0 +1,32 @@
+/*formulaire*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 14%;
+}
+
+.form * {
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    border: solid 2px;
+    width: 80%;
+}
+
+textarea {
+    height: 78px;
+}
+
+.bouton {
+    width: 20%;
+    padding-left: 65%;
+}
+
+.submit {
+    border-radius: 5px;
+    cursor: pointer;
+}
