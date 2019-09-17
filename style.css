@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-    width: 120px;
+    height: 120px;
 }
 
 .titre {
@@ -134,7 +134,7 @@ header {
 }
 
 
-/* ARTICLES */
+/* ARTICLES SUR PAGE INDEX */
 
 .container-articles {
     display: flex;
@@ -148,12 +148,39 @@ header {
     flex-direction: row;
     width: 80%;
     margin: 20px auto;
-    border: 1px solid black;
     font-family: "Chilanka";
 }
 
 .photo-preview {
     height: 150px;
+}
+
+/* ARTICLE SUR PAGE ARTICLE */
+
+.structure-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    min-width: 700px;
+    margin: 20px;
+    font-family: "Chilanka";
+    font-size: 1.2em;
+}
+
+.article img {
+    height: 400px;
+    margin-right: 20px;
+}
+
+.article h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -223,12 +250,18 @@ footer {
     }
 
     .container-menu {
-        height: 100%;
+        height: 120px;
+        width: 70%;
         align-items: center;
+    }
+
+    .separateur {
+        flex-direction: row-reverse;
     }
 
     .container-archives {
         flex-direction: row;
+        align-self: start;
     }
 
     .article-preview {
