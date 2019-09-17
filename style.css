@@ -1,38 +1,71 @@
-<<<<<<< HEAD
-/*formulaire*/
+@import url('https://fonts.googleapis.com/css?family=Chilanka|Nanum+Pen+Script|Pacifico&display=swap');
 
-.form {
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    padding-left: 14%;
 }
 
-.form * {
-    margin-bottom: 10px;
+/* LOGO + TITRE */
+
+.container-logo {
+    display: flex;
+    flex-direction: row;
 }
 
-input,
-textarea {
-    border: solid 2px;
-    width: 80%;
+.logo {
+    width: 120px;
 }
 
-textarea {
-    height: 78px;
+.titre {
+    font-family: "Pacifico";
+    display: block;
+    width: auto;
+    margin-left: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.bouton {
-    width: 20%;
-    padding-left: 65%;
+/* MENU DE NAVIGATION */
+
+.container-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: "Nanum Pen Script";
+    list-style-type: none;
+    background-color: black;
+    height: 70px;
+    align-items: center;
 }
 
-.submit {
-    border-radius: 5px;
-    cursor: pointer;
+.bouton-menu {
+    display: block;
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
 }
-=======
-.section-archives
+
+/* CAROUSEL CITATIONS */
+
+/* SEPARATEUR ARTICLES ET MENU ARCHIVES */
+
+.separateur {
+    display: flex;
+    flex-direction: column;
+}
+
+/* MENU LATERAL ARCHIVES */
+
+.container-archives {
+    align-self: end;
+}
+
+.container-archives
 #menu-accordeon {
     padding: 0;
     margin: 0;
@@ -99,4 +132,106 @@ textarea {
 #menu-accordeon li:hover li {
     max-height: 15em;
 }
->>>>>>> 6689398b686735bcf8042190355bac7541ae4b90
+
+
+/* ARTICLES */
+
+.container-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.article-preview {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid black;
+    font-family: "Chilanka";
+}
+
+.photo-preview {
+    height: 150px;
+}
+
+
+/* FORMULAIRE DE CONTACT */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 14%;
+}
+
+.form * {
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    border: solid 2px;
+    width: 80%;
+}
+
+textarea {
+    height: 78px;
+}
+
+.bouton {
+    width: 20%;
+    padding-left: 65%;
+}
+
+.submit {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* BAS DE PAGE */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.container-footer-links {
+
+}
+
+.footer-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: "Nanum Pen Script";
+    font-size: 1.5em;
+}
+
+
+/* MEDIA QUERIES POUR ECRAN DESKTOP */
+
+
+@media screen and (min-width: 961px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container-menu {
+        height: 100%;
+        align-items: center;
+    }
+
+    .container-archives {
+        flex-direction: row;
+    }
+
+    .article-preview {
+        width: 40%;
+    }
+}
