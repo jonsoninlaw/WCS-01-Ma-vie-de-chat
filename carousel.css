@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Chilanka|Nanum+Pen+Script|Pacifico&display=swap');
+
+/* CAROUSEL CITATIONS */
+
+.slider p{
+    text-align: center;
+    font-family: Chilanka;
+    padding: 5em;
+}
+
+.slider span{
+    font-style: italic;
+}
+
+.section-carousel{
+    position: relative;
+}
+
+.slide_1{
+    animation-duration: 20s;
+    animation-name: slide1;
+    animation-iteration-count: infinite;
+    width: 100%;   
+}
+
+@keyframes slide1 {
+    from{
+        opacity: 0;
+    }
+    20% { 
+        opacity: 1;
+    }
+    38% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 0;
+    }
+    to{
+        opacity: 0;
+    }
+}
+.slide_2{
+    animation-duration: 20s;
+    animation-name: slide2;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 3%;
+    width:100%;
+    ;
+}
+
+@keyframes slide2 {
+    from{
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+    }
+    69% {
+        opacity: 1;
+    }
+    70% {
+        text-align: center;
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
