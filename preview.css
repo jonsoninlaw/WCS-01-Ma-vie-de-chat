@@ -1,0 +1,27 @@
+/* ARTICLES SUR PAGE INDEX */
+
+.container-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.article-preview {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 20px;
+    font-family: "Chilanka";
+}
+
+.photo-preview {
+    height: 150px;
+}
+
+@media screen and (min-width: 961px) {
+
+    .article-preview {
+        width: 40%;
+    }
+}

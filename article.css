@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Chilanka|Nanum+Pen+Script|Pacifico&display=swap');
+
+
+/* ARTICLE SUR PAGE ARTICLE */
+
+.structure-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    min-width: 700px;
+    margin: 20px;
+    font-family: "Chilanka";
+    font-size: 1.2em;
+}
+
+.article img {
+    height: 400px;
+    margin-right: 20px;
+}
+
+.article h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
