@@ -19,6 +19,7 @@ header {
 
 .logo {
     height: 120px;
+    padding: 10px;
 }
 
 .titre {
@@ -36,6 +37,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     font-family: "Nanum Pen Script";
     list-style-type: none;
     background-color: black;
@@ -48,6 +50,8 @@ header {
     font-size: 2em;
     text-decoration: none;
     color: white;
+    margin: auto;
+    width: 40%;
 }
 
 /* CAROUSEL CITATIONS */
@@ -225,6 +229,7 @@ header {
 
 .photo-preview {
     height: 150px;
+    transform: rotate(3deg);
 }
 
 /* ARTICLE SUR PAGE ARTICLE */
@@ -321,10 +326,19 @@ footer {
         justify-content: space-between;
     }
 
+    .titre {
+        width: 300px;
+    }
+
     .container-menu {
         height: 120px;
-        width: 70%;
+        width: 100%;
         align-items: center;
+    }
+
+    .container-menu div {
+        display: flex;
+        flex-direction: row;
     }
 
     .separateur {
@@ -340,4 +354,3 @@ footer {
         width: 40%;
     }
 }
->>>>>>> 924ceb35c7ea59fe685e6bd26cf83d5d39fd8bb4
