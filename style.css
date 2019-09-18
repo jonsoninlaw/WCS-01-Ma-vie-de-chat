@@ -340,28 +340,22 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
-<<<<<<< HEAD
 
     .titre {
         width: 300px;
     }
 
-=======
->>>>>>> archive
     .container-menu {
         height: 120px;
         width: 100%;
         align-items: center;
     }
-<<<<<<< HEAD
 
     .container-menu div {
         display: flex;
         flex-direction: row;
     }
 
-=======
->>>>>>> archive
     .separateur {
         flex-direction: row-reverse;
     }
@@ -372,10 +366,3 @@ footer {
     .article-preview {
         width: 40%;
     }
-<<<<<<< HEAD
-}
-=======
-}
-
->>>>>>>924ceb35c7ea59fe685e6bd26cf83d5d39fd8bb4
->>>>>>> archive
