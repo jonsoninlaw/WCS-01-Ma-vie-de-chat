@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Chilanka|Nanum+Pen+Script|Pacifico&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +8,7 @@ header {
     display: flex;
     flex-direction: column;
 }
+
 
 /* LOGO + TITRE */
 
@@ -30,6 +30,7 @@ header {
     margin-top: auto;
     margin-bottom: auto;
 }
+
 
 /* MENU DE NAVIGATION */
 
@@ -54,15 +55,16 @@ header {
     width: 40%;
 }
 
+
 /* CAROUSEL CITATIONS */
 
-.slider p{
+.slider p {
     text-align: center;
     font-family: Chilanka;
     padding: 5em;
 }
 
-.slider span{
+.slider span {
     font-style: italic;
 }
 
@@ -70,7 +72,7 @@ header {
     position: relative;
 }
 
-.slide_1{
+.slide_1 {
     animation-duration: 20s;
     animation-name: slide1;
     animation-iteration-count: infinite;
@@ -79,10 +81,10 @@ header {
 }
 
 @keyframes slide1 {
-    from{
+    from {
         opacity: 0;
     }
-    20% { 
+    20% {
         opacity: 1;
     }
     38% {
@@ -91,11 +93,12 @@ header {
     49% {
         opacity: 0;
     }
-    to{
+    to {
         opacity: 0;
     }
 }
-.slide_2{
+
+.slide_2 {
     animation-duration: 20s;
     animation-name: slide2;
     animation-iteration-count: infinite;
@@ -106,7 +109,7 @@ header {
 }
 
 @keyframes slide2 {
-    from{
+    from {
         opacity: 0;
     }
     30% {
@@ -122,7 +125,7 @@ header {
         text-align: center;
         opacity: 1;
     }
-    to{
+    to {
         opacity: 0;
     }
 }
@@ -135,19 +138,20 @@ header {
     flex-direction: column;
 }
 
+
 /* MENU LATERAL ARCHIVES */
 
 .container-archives {
-    align-self: end;
+    display: flex;
+    justify-content: center;
 }
 
-.container-archives
-#menu-accordeon {
+.container-archives #menu-accordeon {
     padding: 0;
     margin: 0;
     list-style: none;
     text-align: center;
-    width: 180px;
+    width: 100%;
 }
 
 #menu-accordeon ul {
@@ -158,13 +162,13 @@ header {
 }
 
 #menu-accordeon li {
-    background-color: #729EBF;
-    background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
-    background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
-    border-radius: 6px;
+    background-color: #667999;
+    background-image: -webkit-linear-gradient(top, #8291A9 0%, #667999 100%);
+    background-image: linear-gradient(to bottom, #8291A9 0%, #667999 100%);
+    /* border-radius: 6px; */
     margin-bottom: 2px;
-    box-shadow: 3px 3px 3px #999;
-    border: solid 1px #333A40
+    /* box-shadow: 3px 3px 3px #999; */
+    border: solid 1px #E7B492
 }
 
 #menu-accordeon li li {
@@ -183,20 +187,31 @@ header {
     text-decoration: none;
     color: #fff;
     padding: 8px 0;
-    font-family: verdana;
+    font-family: "Nanum Pen Script";
+    font-weight: bold;
     font-size: 1.2em
 }
 
 #menu-accordeon ul li a,
-#menu-accordeon li:hover li a {
-    font-size: 1em
+#menu-accordeon
+/*li:hover*/
+
+li a {
+    font-size: 1em;
+    font-family: "Nanum Pen Script";
 }
 
-#menu-accordeon li:hover {
+#menu-accordeon
+/*li:hover*/
+
+{
     background: #729EBF
 }
 
-#menu-accordeon li li:hover {
+#menu-accordeon li
+/*li:hover*/
+
+{
     background: #999;
 }
 
@@ -205,10 +220,12 @@ header {
     border: none;
 }
 
-#menu-accordeon li:hover li {
+#menu-accordeon
+/*li:hover*/
+
+li {
     max-height: 15em;
 }
-
 
 /* ARTICLES SUR PAGE INDEX */
 
@@ -231,6 +248,7 @@ header {
     height: 150px;
     transform: rotate(3deg);
 }
+
 
 /* ARTICLE SUR PAGE ARTICLE */
 
@@ -294,6 +312,7 @@ textarea {
     cursor: pointer;
 }
 
+
 /* BAS DE PAGE */
 
 footer {
@@ -303,9 +322,7 @@ footer {
     background-color: black;
 }
 
-.container-footer-links {
-
-}
+.container-footer-links {}
 
 .footer-link {
     display: block;
@@ -318,39 +335,47 @@ footer {
 
 /* MEDIA QUERIES POUR ECRAN DESKTOP */
 
-
 @media screen and (min-width: 961px) {
-
     header {
         flex-direction: row;
         justify-content: space-between;
     }
+<<<<<<< HEAD
 
     .titre {
         width: 300px;
     }
 
+=======
+>>>>>>> archive
     .container-menu {
         height: 120px;
         width: 100%;
         align-items: center;
     }
+<<<<<<< HEAD
 
     .container-menu div {
         display: flex;
         flex-direction: row;
     }
 
+=======
+>>>>>>> archive
     .separateur {
         flex-direction: row-reverse;
     }
-
     .container-archives {
         flex-direction: row;
         align-self: start;
     }
-
     .article-preview {
         width: 40%;
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>>924ceb35c7ea59fe685e6bd26cf83d5d39fd8bb4
+>>>>>>> archive
