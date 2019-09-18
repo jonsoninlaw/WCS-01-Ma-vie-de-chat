@@ -55,17 +55,23 @@ header {
 .slider p{
     text-align: center;
     font-family: Chilanka;
-    padding: 2em;
+    padding: 5em;
 }
 
 .slider span{
     font-style: italic;
 }
 
+.section-carousel{
+    position: relative;
+}
+
 .slide_1{
     animation-duration: 20s;
     animation-name: slide1;
     animation-iteration-count: infinite;
+    width: 100%;
+    
 }
 
 @keyframes slide1 {
@@ -85,13 +91,14 @@ header {
         opacity: 0;
     }
 }
-/* Position absolute et top à modifier */
 .slide_2{
     animation-duration: 20s;
     animation-name: slide2;
     animation-iteration-count: infinite;
     position: absolute;
-    top: 25%;
+    top: 3%;
+    width:100%;
+    ;
 }
 
 @keyframes slide2 {
