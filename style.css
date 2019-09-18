@@ -16,11 +16,11 @@ header {
 .container-logo {
     display: flex;
     flex-direction: row;
+    background-color: #E7B492;
 }
 
 .logo {
-    height: 120px;
-    padding: 10px;
+    height: 180px;
 }
 
 .titre {
@@ -41,18 +41,14 @@ header {
     justify-content: space-evenly;
     flex-wrap: wrap;
     font-family: "Nanum Pen Script";
-    list-style-type: none;
-    background-color: black;
+    background-color: #E7B492;
     height: 70px;
-    align-items: center;
 }
 
 .bouton-menu {
-    display: block;
     font-size: 2em;
     text-decoration: none;
     color: white;
-    margin: auto;
     width: 40%;
 }
 
@@ -86,22 +82,36 @@ footer {
 @media screen and (min-width: 961px) {
 
     header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .titre { 
-        width: 300px;
-    }
-
-    .container-menu {
-        height: 120px;
-        width: 100%;
-        align-items: center;
-    }
-    .container-menu div{
         display: flex;
         flex-direction: row;
+    }
+
+    .container-logo {
+        width: 50%;
+    }
+
+    .logo {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+    
+    .container-menu {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: auto;
+    }
+    
+    .titre { 
+        text-align: center;
+    }
+    
+    .bouton-menu {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .separateur {
