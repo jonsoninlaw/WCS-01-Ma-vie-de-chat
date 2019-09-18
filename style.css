@@ -54,6 +54,8 @@ header {
 
 .slider p{
     text-align: center;
+    font-family: Chilanka;
+    padding: 2em;
 }
 
 .slider span{
@@ -88,8 +90,8 @@ header {
     animation-duration: 20s;
     animation-name: slide2;
     animation-iteration-count: infinite;
-    /* position: absolute; */
-    /* top: 0.8%; */
+    position: absolute;
+    top: 25%;
 }
 
 @keyframes slide2 {
@@ -195,9 +197,6 @@ header {
 #menu-accordeon li:hover li {
     max-height: 15em;
 }
-<<<<<<< HEAD
->>>>>>> 6689398b686735bcf8042190355bac7541ae4b90
-
 
 
 /* ARTICLES SUR PAGE INDEX */
@@ -213,7 +212,7 @@ header {
     display: flex;
     flex-direction: row;
     width: 80%;
-    margin: 20px auto;
+    margin: 20px;
     font-family: "Chilanka";
 }
 
