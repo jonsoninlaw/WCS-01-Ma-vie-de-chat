@@ -72,3 +72,9 @@
     }
 }
 
+@media screen and (max-width: 961px) {
+    .section-carousel p{
+        padding-top: 1.8em;
+        padding-bottom: 1em;
+    }
+}

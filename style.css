@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Chilanka|Nanum+Pen+Script|Pacifico&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -41,6 +40,7 @@ header {
     justify-content: space-evenly;
     flex-wrap: wrap;
     font-family: "Nanum Pen Script";
+
     background-color: #E7B492;
     height: 70px;
 }
@@ -52,7 +52,7 @@ header {
     width: 40%;
 }
 
-
+.separateur
 /* SEPARATEUR ARTICLES ET MENU ARCHIVES */
 
 .separateur {
@@ -60,27 +60,37 @@ header {
     flex-direction: column;
 }
 
+
 /* BAS DE PAGE */
 
-footer {
+.footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: black;
+    background-color: #e7b492;
+    justify-content: space-around;
 }
 
-.footer-link {
-    display: block;
+.footer a {
+    display: flex;
     color: white;
     text-decoration: none;
     font-family: "Nanum Pen Script";
-    font-size: 1.5em;
+    font-size: 1.2em;
+    justify-content: center;
+    padding: 10px;
 }
+
+.footer ul {
+    flex-direction: column;
+}
+
+.footer li {
+    list-style: none;
+}
+
 
 /* MEDIA QUERIES POUR ECRAN DESKTOP */
 
 @media screen and (min-width: 961px) {
-
     header {
         display: flex;
         flex-direction: row;
@@ -113,8 +123,26 @@ footer {
         margin-left: 10px;
         margin-right: 10px;
     }
-
     .separateur {
         flex-direction: row;
     }
+    .footer {
+        height: 100px;
+    }
+    .footer ul {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .footer li {
+        padding: 15px 0 15px 0px;
+    }
+  
+    .footer a {
+        font-size: 1em;
+    }
+
 }
