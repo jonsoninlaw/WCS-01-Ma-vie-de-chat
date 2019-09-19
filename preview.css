@@ -4,25 +4,39 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    
 }
 
 .article-preview {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 80%;
     margin: 20px;
     font-family: "Chilanka";
 }
 
-.photo-preview {
-    height: 150px;
+.article-preview div {
+    margin-top: 10px;
 }
 
-@media screen and (max-width: 961px) {
+.article-preview h2 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.photo-preview {
+    height: 150px;
+    margin-right: 10px;
+}
+
+
+@media screen and (min-width: 961px) {
 
     .container-articles {
         flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+
     }
 
     .article-preview {
