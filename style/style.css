@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    min-width: 380px;
+    min-width: 360px;
 }
 
 
@@ -36,11 +36,11 @@ header {
 .titre {
     font-family: "Pacifico";
     font-weight: lighter;
-    font-size: 2.2em;
+    font-size: 2.1em;
     display: block;
     text-align: center;
     width: auto;
-    padding-left: 60px;
+    padding-left: 80px;
     padding-top: 20px;
     margin-top: auto;
     margin-bottom: auto;
@@ -68,10 +68,10 @@ header {
 }
 
 .bouton-menu {
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-decoration: none;
     color: white;
-    width: 45%;
+    width: 47%;
     font-weight: bold;
 }
 

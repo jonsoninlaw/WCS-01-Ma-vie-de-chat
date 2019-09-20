@@ -20,10 +20,11 @@
     font-family: "Pacifico";
     font-weight: lighter;
     color: #B26D3F;
+    line-height: 1.2em;
 }
 
 .article-preview div {
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 .article-preview h2 {
@@ -33,7 +34,7 @@
 
 .photo-preview {
     height: 150px;
-    margin-right: 15px;
+    margin-right: 20px;
     box-shadow: 6px 6px 15px black;
     transform: rotate(-3deg);
 }
