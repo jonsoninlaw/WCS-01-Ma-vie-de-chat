@@ -9,6 +9,43 @@ h2{
     padding-top: 1em;
     font-size: 3em;
 }
+.ballons{
+    animation-duration: 20s;
+    animation-name: ballons;
+    animation-iteration-count: infinite;
+    width: 10%;
+    height: auto; 
+    position: absolute;
+    left:8em;
+}
+    @keyframes ballons {
+        from{
+            opacity: 0;
+            top:20em;
+        }
+        20% { 
+            opacity: 1;
+            
+        }
+        80% {
+            opacity: 0.5;
+            top: 12em;
+        }
+        to{
+            opacity: 0;
+            top:12em;
+        }
+    }
+    .slide_2{
+        animation-duration: 20s;
+        animation-name: slide2;
+        animation-iteration-count: infinite;
+        position: absolute;
+        top: 3%;
+        width:100%;
+        ;
+    }
+}
 .article{
     border: 0.2em double  #A6B0C1;
     padding:3em 5em;
@@ -24,6 +61,10 @@ p {
     text-align: justify;
     padding-right: 0.8em;
     padding-left: 0.8em;
+}
+span{
+    text-align: center;
+    font-weight: bold;
 }
 .structure-article {
     display: flex;
@@ -73,10 +114,38 @@ p {
         padding-top: 0em;
         padding-bottom: 0em;
     }
+
+    .ballons{
+        animation-duration: 25s;
+        animation-name: ballons;
+        animation-iteration-count: infinite;
+        width: 10%;
+        height: auto; 
+        position: absolute;
+        left:1em;
+    }
+        @keyframes ballons {
+            from{
+                opacity: 0;
+                top:23em;
+            }
+            20% { 
+                opacity: 1;
+                
+            }
+            80% {
+                opacity: 0.3;
+                top: 13em;
+            }
+            to{
+                opacity: 0;
+                top:13em;
+            }
+        }
     h3{
         text-align: center;
         margin-top: 0.5em;
-        font-size: 1.8em;
+        font-size: 1.5em;
         
     }
     .article {
