@@ -5,7 +5,8 @@
     display: flex;
     width: 75%;
     height: auto;
-    padding: 10px 10px 5px 10px;
+    margin: 10px 10px 5px 10px;
+    box-shadow: 6px 6px 15px black;
 }
 
 .apropos {
@@ -19,15 +20,17 @@
 
 .apropos h2 {
     display: flex;
-    font-family: "Nanum Pen Script";
+    font-family: "Pacifico";
+    font-weight: lighter;
     padding: 5%;
+    color: #B26D3F;
 }
 
 
 .apropos p {
     text-align: justify;
     font-family: "Chilanka";
-    padding: 0 10% 5% 10%;
+    padding: 10% 10% 5% 10%;
 }
 /* FORMULAIRE DE CONTACT */
 
@@ -37,6 +40,9 @@
     text-decoration: none;
     justify-content: center;
     padding: 35px;
+    font-family: "Pacifico";
+    font-weight: lighter;
+    color: #B26D3F;
 }
 
 .form {
@@ -47,7 +53,7 @@
 
 .form * {
     margin-bottom: 10px;
-    margin-left: 30px;
+    margin-left: 33px;
 }
 
 input,
@@ -80,50 +86,34 @@ textarea {
     padding: 5%;
     font-size: 0.8em;
 }
-/*footer*/
 
-.footer {
-    display: flex;
-    background-color: #e7b492;
-    justify-content: space-around;
-}
-
-.footer h2 {}
-
-.footer a {
-    display: flex;
-    color: white;
-    text-decoration: none;
-    font-family: "Nanum Pen Script";
-    font-size: 1.2em;
-    justify-content: center;
-    padding: 10px;
-}
-
-.footer ul {
-    flex-direction: column;
-}
-
-.footer li {
-    list-style: none;
-}
-/* MEDIA QUERIES POUR ECRAN DESKTOP */
 
 @media screen and (min-width: 961px) {
     /*PAGE QUI SUIS-JE ET CONTACT*/
     /*qui suis-je*/
     .portrait {
-        width: 40%;
+        position: absolute;
+        width: 20em;
         height: auto;
+        top: 10em;
+        left: 10em;
     }
     .apropos {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
-        margin: 0px;
-        
+        padding-right: 130px; 
+        width: 80%;
+        padding-top: 5em;
     }
+
+    #apropos {
+
+        margin-right: 30%;
+    }
+
+
     .apropos h2 {
         position: relative;
         left: 70%;
@@ -131,12 +121,6 @@ textarea {
         text-align: center;
         width: 50em;
     }
-    /*
-display: block;
-}
-span {
-display: block;
-}*/
     .apropos p {
         text-align: justify;
         font-family: "Chilanka";
@@ -149,6 +133,9 @@ display: block;
         text-decoration: none;
         justify-content: center;
         padding: 35px;
+        font-family: "Pacifico";
+        font-weight: lighter;
+        color: #B26D3F;
     }
     .form {
         display: flex;
