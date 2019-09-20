@@ -32,6 +32,8 @@ header {
     margin-left: 30px;
     margin-top: auto;
     margin-bottom: auto;
+    color: #314B76;
+    text-shadow: 3px 3px 1px gray; 
 }
 
 /* MENU DE NAVIGATION */
@@ -102,7 +104,7 @@ header {
     }
 
     .container-logo {
-        width: 50%;
+        width: 15%;
     }
 
     .logo {
@@ -120,7 +122,7 @@ header {
     
     .titre { 
         text-align: center;
-        font-size: 2.5em;
+        font-size: 3em;
     }
     
     .container-boutons-menu {
@@ -156,6 +158,10 @@ header {
 
 
 @media screen and (min-width: 650px) and (max-width: 961px) {
+
+    .titre {
+        font-size: 2.5em;
+    }
     .bouton-menu {
         font-size: 1.6em;
         width: auto;
