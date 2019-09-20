@@ -1,55 +1,116 @@
 @import url('https://fonts.googleapis.com/css?family=Chilanka|Nanum+Pen+Script|Pacifico&display=swap');
-
-/* MENU LATERAL ARCHIVES */
-
-.main-navigation {
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 961px) {
+    /*MENU ARCHIVES MOBILE*/
+    #menu-accordeon {
+        display: none;
+    }
+    .main-navigation {
+        display: flex;
+        justify-content: center;
+    }
+    .menu {
+        flex-basis: 100%;
+        display: none;
+        list-style: none;
+        overflow: hidden;
+        font-family: 'Chilanka'
+    }
+    .menu-toggle {
+        font-family: 'Chilanka';
+        font-weight: bold;
+    }
+    .menu li a {
+        text-decoration: none;
+        font-weight: bold;
+        /* border-bottom: 1px solid rgb(238, 238, 238); */
+        display: inline-block;
+        padding: 0.5em 1em;
+        color: #667999;
+    }
+    .menu-checkbox:checked~.menu {
+        display: block;
+        padding-left: 0;
+    }
+    .menu-checkbox {
+        opacity: 0;
+        position: absolute;
+        top: -1000px;
+    }
+    .menu-checkbox:focus+.menu-toggle {
+        /* outline: #667999 auto 5px; */
+    }
+    .menu-toggle {
+        padding: .5em 1em;
+    }
+    .nav-wrapper {
+        align-items: center;
+        /* display: flex; */
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
 }
 
-.menu {
-    flex-basis: 100%;
-    display: none;
-    list-style: none;
-    overflow: hidden;
-    font-family: 'Chilanka'
+@media screen and (min-width: 961px) {
+    /*MENU ARCHIVES DEKSTOP*/
+    .main-navigation {
+        display: none;
+    }
+    #menu-accordeon {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+        /* width: 180px; */
+    }
+    #menu-accordeon ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+    #menu-accordeon li {
+        background-color: #729EBF;
+        background-image: -webkit-linear-gradient(top, #8291A9 0%, #667999 100%);
+        background-image: linear-gradient(to bottom, #8291A9 0%, #667999 100%);
+        /* border-radius: 6px; */
+        margin-bottom: 2px;
+        /* box-shadow: 3px 3px 3px #999; */
+        /* border: solid 1px #333A40 */
+    }
+    #menu-accordeon li li {
+        max-height: 0;
+        overflow: hidden;
+        transition: all .5s;
+        border-radius: 0;
+        background: #E7B492;
+        box-shadow: none;
+        border: none;
+        margin: 0
+    }
+    #menu-accordeon a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        padding: 8px 0;
+        font-family: 'Chilanka';
+        /* font-size: 1.2em; */
+        font-weight: bold;
+    }
+    #menu-accordeon ul li a,
+    #menu-accordeon li:hover li a {
+        font-size: 1em
+    }
+    #menu-accordeon li:hover {
+        background: #8291A9
+    }
+    #menu-accordeon li li:hover {
+        background: #8291A9;
+    }
+    #menu-accordeon ul li:last-child {
+        border-radius: 0 0 6px 6px;
+        border: none;
+    }
+    #menu-accordeon li:hover li {
+        max-height: 15em;
+    }
 }
-
-.menu-toggle {
-    font-family: 'Chilanka'
-}
-
-.menu li a {
-    text-decoration: none;
-    /* border-bottom: 1px solid rgb(238, 238, 238); */
-    display: inline-block;
-    padding: 0.5em 1em;
-}
-
-.menu-checkbox:checked~.menu {
-    display: block;
-    padding-left: 0;
-}
-
-.menu-checkbox {
-    opacity: 0;
-    position: absolute;
-    top: -1000px;
-}
-
-.menu-checkbox:focus+.menu-toggle {
-    /* outline: #667999 auto 5px; */
-}
-
-.menu-toggle {
-    padding: .5em 1em;
-}
-
-.nav-wrapper {
-    align-items: center;
-    /* display: flex; */
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-}
-
-@media screen and (min-width: 961px) {}

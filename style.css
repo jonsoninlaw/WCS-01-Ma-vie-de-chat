@@ -132,9 +132,7 @@ header {
         text-align: center;
         width: auto;
     }
-    .separateur {
-        flex-direction: row;
-    }
+
     .footer {
         height: 100px;
     }
