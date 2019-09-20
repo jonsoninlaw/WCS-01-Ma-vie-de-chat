@@ -150,7 +150,7 @@ section h3{
         animation-duration: 30s;
         animation-name: ballons1;
         animation-iteration-count: infinite;
-        width: 15%;
+        width: 30%;
         height: auto;
         position: absolute;
         left:1em;
@@ -178,7 +178,7 @@ section h3{
         animation-duration: 30s;
         animation-name: ballons2;
         animation-iteration-count: infinite;
-        width: 10%;
+        width: 15%;
         height: auto;
         position: absolute;
         left:20em;
